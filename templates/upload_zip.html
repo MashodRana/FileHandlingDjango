@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+
+    </head>
+
+    <body>
+        <h1>Zip File Uploading</h1>
+        <hr>
+        {% if done %}
+            <h2>{{msg}}</h2>
+        {% else %}
+        <p>{{msg}}</p>
+
+        <form action="{% url 'upload-zip' %}" enctype="multipart/form-data", method="POST">
+            {% csrf_token %}
+            <input type="file" name="zip_file">
+            <button type="submit">upload</button>
+        </form>
+        {% endif %}
+    </body>
+</html>
