@@ -1,7 +1,8 @@
 .vscode/
 __pycache__/
 FileHandlingDjango/__pycache__/
-media/*
+!media/.keep
+!static/.keep
 zip_file/__pycache__/
 zip_file/migrations/
 
