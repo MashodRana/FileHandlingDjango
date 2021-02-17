@@ -1,0 +1,8 @@
+.vscode/
+__pycache__/
+FileHandlingDjango/__pycache__/
+media/*
+zip_file/__pycache__/
+zip_file/migrations/
+
+
